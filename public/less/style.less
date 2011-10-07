@@ -1,0 +1,144 @@
+@import "bootstrap.less";
+@basefont: 16px;
+@baseline: 23px;
+
+body
+{
+	padding-top:3em;
+}
+
+h1
+{
+	font-size:330%;
+	line-height:100%;
+	font-weight:normal;
+}
+
+h2
+{
+	font-size:150%;
+	font-weight:normal;
+	margin:2em 0;
+}
+
+.h3 {
+  font-weight: bold;
+  color: @grayDark;
+  small {
+    color: @grayLight;
+  }
+}
+.h3{
+  line-height: @baseline * 2;
+}
+.h3 {
+  font-size: 18px;
+  small {
+    font-size: 14px;
+  }
+}
+
+label.h3
+{
+	width:auto;
+	display:block;
+	padding-top:0;
+}
+
+.center
+{
+	text-align:center;
+}
+
+.intro
+{
+	font-size:120%;
+	line-height:150%;
+	display:block;
+	margin: 1em 4em;
+
+	em
+	{
+		font-style:normal;
+		color:#8b0000;
+	}
+}
+
+.example .image 
+{
+	margin-top:6em;
+	text-align:right;
+	background: url(../images/arrow.png) no-repeat 70px center;
+	padding-left:320px;
+
+	img
+	{
+		border:solid 1px @grayLight;
+		.border-radius(3px);
+	}
+}
+
+.newsletter form
+{
+	margin:2em 0;
+}
+
+.madein
+{
+	width:200px;
+	text-align:center;
+	display:block;
+	position:relative;
+	margin:1.5em auto;
+	font-size:.9em;
+}
+
+.footer
+{
+	font-size:.8em;
+	margin-bottom:1em;
+}
+
+.madein span.black,
+.madein span.red,
+.madein span.gold,
+.madein span.black:before,
+.madein span.red:before,
+.madein span.gold:before
+{
+	content: " ";
+	display:block;
+	width:10px;
+	height:10px;
+	background:#000;
+	position:absolute;
+	left:-50px;
+	top:7px;
+}
+
+.madein span.red
+{
+	left:-30px;
+}
+
+.madein span.red,
+.madein span.red:before
+{
+	background:#f00;
+	right:-30px;
+}
+
+.madein span.gold,
+.madein span.gold:before
+{
+	background:#ffd81c;
+	left:-10px;
+}
+
+.madein span.black:before,
+.madein span.red:before,
+.madein span.gold:before
+{
+	top:0px;
+	left:250px;
+}
